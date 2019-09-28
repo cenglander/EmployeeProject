@@ -35,11 +35,9 @@ public abstract class Employee implements Comparable<Employee> {
 
     public void setSalary(double salary) {
         if (salary < 20000) {
-            System.out.println("New salary is too low - Current salary is not changed");
-
+            System.out.println("Salary is too low - Current salary is not changed");
         } else if (salary > 100000) {
-            System.out.println("New salary is too high - Current salary is not changed");
-
+            System.out.println("Salary is too high - Current salary is not changed");
         } else {
             this.salary = salary;
         }
@@ -75,7 +73,7 @@ public abstract class Employee implements Comparable<Employee> {
 
     @Override
     public String toString() {
-        return "Employee ID:" + String.format("%2d", id) + String.format("  Name: %-20s", name) + "Birthdate: " + birthdate + "   Salary: " + String.format("%,.2f", salary) + "   Gender: " + gender.toString().charAt(0) + String.format("%-7s", gender.toString().substring(1).toLowerCase()) + "   Job title/Department: " + this.getClass().getSimpleName().replaceAll("([^_])([A-Z])", "$1 $2") + "\n";
+        return "ID: " + String.format("%2d", id) + String.format("  Name: %-20s", name) + "Birthdate: " + birthdate + "   Salary: " + String.format("%,.2f", salary) + "   Gender: " + gender.toString().charAt(0) + String.format("%-7s", gender.toString().substring(1).toLowerCase()) + "   Job title/Department: " + this.getClass().getSimpleName().replaceAll("([^_])([A-Z])", "$1 $2") + "\n";
     }
 
     @Override

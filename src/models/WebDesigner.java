@@ -22,10 +22,10 @@ public class WebDesigner extends Employee {
     }
 
     public void printExtraInfo() {
-        System.out.println("                Number of websites: " + websites.size());
-        System.out.println("                List of web sites: ");
+        System.out.println("       Number of websites: " + websites.size());
+        System.out.println("       List of web sites: ");
         for (String website : websites) {
-            System.out.println("                " + website);
+            System.out.println("       " + website);
         }
     }
 

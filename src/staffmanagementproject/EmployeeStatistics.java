@@ -123,7 +123,11 @@ public class EmployeeStatistics {
             for (int j = s.length(); j < i; j++) {
                 s = s + " ";
             }
+            return s + "  ";
+        } else if (s.length() == i) {
+            return s + "  ";
+        } else {
+            return s.substring(0, i) + "  ";
         }
-        return s;
     }
 }

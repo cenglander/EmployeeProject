@@ -36,10 +36,10 @@ public class Marketing extends Employee {
     }
 
     public void printExtraInfo() {
-        System.out.println("                Number of customers: " + listOfCustomers.size());
-        System.out.println("                List of customers: ");
+        System.out.println("       Number of customers: " + listOfCustomers.size());
+        System.out.println("       List of customers: ");
         for (String customer : listOfCustomers) {
-            System.out.println("                " + customer);
+            System.out.println("       " + customer);
         }
     }
 
